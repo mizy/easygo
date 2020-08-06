@@ -1,0 +1,51 @@
+{
+  "id": "1926163",
+  "name": "app",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11810491",
+      "name": "下载",
+      "font_class": "dowload",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "14112185",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "10562424",
+      "name": "Player, stop",
+      "font_class": "stop",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "10562425",
+      "name": "Player, rec, record",
+      "font_class": "record",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "10562434",
+      "name": "Player, pause",
+      "font_class": "pause",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "10562437",
+      "name": "Player, play",
+      "font_class": "play",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    }
+  ]
+}

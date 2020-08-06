@@ -1,0 +1,50 @@
+.m-recorder{
+	width:100vw;
+	height:100vh;
+	overflow: hidden;
+	.button-area{
+		height: 60px;
+		width:100vw;
+		position: absolute;
+		bottom:0;
+		left:0;
+		background-color: rgba(255,255,255,0.9);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.record-button{
+			width:40px;
+			height: 40px;
+			border-radius: 21px;
+			background-color: red;
+			text-align: center;
+			line-height: 40px;
+			border: 1px solid #fff;
+			>span{
+				font-size: 32px;;
+				color:#ffffff;
+			}
+		}
+		.stop{
+			transition: all 100ms ease-in;
+			position: absolute;
+			left:~"calc(50% + 50px)";
+			margin-left:15px;
+			cursor: pointer;
+			color: #00aaff;
+			opacity: 0;
+			transform: translate(-50px,0);
+		}
+		.slide-out{
+			transform: translate(0px,0);
+			opacity: 1;
+		}
+	}
+	.audio-waves{
+		width:100%;
+		height: 30px;
+		position: absolute;
+		left:0;
+		top:-30px;
+	}
+}
