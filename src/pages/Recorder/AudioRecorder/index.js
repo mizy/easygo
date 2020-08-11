@@ -5,7 +5,10 @@ export class AudioRecorder {
 		this.analyser = this.audioCtx.createAnalyser();
 		this.source = this.audioCtx.createMediaStreamSource(stream);
 		this.source.connect(this.analyser)
-		this.mediaRecorder = new MediaRecorder(stream); 
+		
+		this.mediaRecorder = new MediaRecorder(stream,{
+			audioBitsPerSecond : 256000,
+		}); 
 		this.addRecordEvent();
 
 	}
@@ -25,7 +28,7 @@ export class AudioRecorder {
 		return new Promise((resolve,reject)=>{
 			this.mediaRecorder.stop();
 			this.mediaRecorder.onstop = (e)=>{
-				const blob = new Blob(this.chunks, { 'type' : 'audio/ogg; codecs=opus' });
+				const blob = new Blob(this.chunks, { 'type' : 'audio/aac; codecs=aac' });
 				resolve(blob);
 			}
 			this.mediaRecorder.onerror =(e)=>{
